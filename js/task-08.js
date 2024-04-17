@@ -2,11 +2,12 @@ const form = document.querySelector('.login-form');
 
 form.addEventListener("submit", event => {
     event.preventDefault();
+    
     const login = form.elements.login.value;
     const password = form.elements.password.value;
 
     if (login === "" || password === "") {
-    return console.log("Please fill in all the fields!");
+    return alert("Please fill in all the fields!");
     }
     
     console.log(`Login: ${login}, Password: ${password}`);
